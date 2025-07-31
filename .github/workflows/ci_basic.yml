@@ -18,3 +18,9 @@ jobs:
 
       - name: Display index.html content
         run: cat ./app/index.html
+
+      - name: Display secrets
+        run: |
+          echo "Runner OS: $RUNNER_OS"
+          echo "Secret: ${{ secrets.FAKE_API_TOKEN }}"
+          echo "Secret: ${{ secrets.ENV_TYPE }}"
