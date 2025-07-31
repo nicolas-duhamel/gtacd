@@ -2,7 +2,7 @@
 
 echo "Démarrage des vérifications..."
 
-if [ -f "/app/index.html" ]; then
+if [ -f "./app/index.html" ]; then
     echo "Fichier index.html trouvé."
     echo "Vérifications terminées avec succès."
     exit 0
